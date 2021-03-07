@@ -8,7 +8,7 @@
     - To open DEV SERVER, please, run "npm start"
     - Production mode - "npm run build"
 
-### 3. Here you can find live demo: https://carousel-seaboard.netlify.app/
+### 3. Here you can find live demo: https://carousel-2-seaboard.netlify.app/
 
     - Slides can be changed by clicking:
       -- buttons (next, prev)
