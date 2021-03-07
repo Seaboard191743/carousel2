@@ -20,26 +20,25 @@
   height: 100%;
   background: rgba(224, 224, 224);
   overflow: hidden;
+  position: relative;
 }
 .slide__image {
-  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 .slide > * {
+  position: absolute;
   pointer-events: none;
   touch-action: none;
 }
 .slide__text {
   background: rgba(0, 191, 165, 1);
   padding: 1rem;
-  position: relative;
   color: rgba(255, 255, 255, 1);
 }
 .slide__content {
-  position: absolute;
   width: max-content;
   padding: 1rem;
   background: rgba(255, 255, 255, 0.7);
@@ -55,6 +54,10 @@
   transform: translate(-50%, -50%);
   width: min(500px, 90%);
   font-size: clamp(1.2rem, 2rem, 4vw);
+}
+.slide__video {
+  min-width: 100%;
+  height: 400px;
 }
 .pointers {
   display: flex;

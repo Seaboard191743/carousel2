@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import first from "./assets/img/1.jpg";
 import second from "./assets/img/2.jpg";
 import third from "./assets/img/3.jpg";
+import ocean from "./assets/video/ocean.mp4";
 import "./slider.css";
 
 export default function Slider() {
@@ -129,6 +130,15 @@ export default function Slider() {
             Vestibulum facilisis lacus ut volutpat suscipit. Phasellus vel
             sollicitudin mi.
           </h3>
+        </div>
+        <div className="slide">
+          <video
+            className="slide__video"
+            src={ocean}
+            autoPlay
+            muted
+            loop
+          ></video>
         </div>
         <div className="slide">
           <div className="slide__content">
