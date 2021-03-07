@@ -11,7 +11,6 @@
 ### 3. Here you can find live demo: https://carousel-2-seaboard.netlify.app/
 
     - Slides can be changed by clicking:
-      -- buttons (next, prev)
       -- indicators of the current slide
      ___________________________________
 
