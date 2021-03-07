@@ -93,11 +93,11 @@ export default function Slider() {
   }, [state.active]);
 
   useEffect(() => {
-    window.oncontextmenu = function(e) {
+    window.oncontextmenu = function (e) {
       e.preventDefault();
-      e.stopPropagation()
-      return false
-    }
+      e.stopPropagation();
+      return false;
+    };
     setState((prev) => ({
       ...prev,
       length: Array.from(sliderRef.current.children).length,
