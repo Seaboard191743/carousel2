@@ -137,7 +137,7 @@ export default function Slider() {
             src={ocean}
             autoPlay
             muted
-            controls
+            loop
           ></video>
         </div>
         <div className="slide">
