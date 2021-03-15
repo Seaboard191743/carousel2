@@ -64,14 +64,14 @@ const Slider = ({ children }) => {
   }
 
   function nextSlide() {
-    if (currTranslate < -width / 2 && currIndex < length - 1) {
+    if (currTranslate < -width / 2.5 && currIndex < length - 1) {
       setState((prev) => ({ ...prev, currIndex: prev.currIndex + 1 }));
     } else if (currTranslate < -width / 2.5 && currIndex === length - 1) {
       setState((prev) => ({ ...prev, currIndex: 0 }));
     }
   }
   function prevSlide() {
-    if (state.currTranslate > width / 2 && currIndex > 0) {
+    if (state.currTranslate > width / 2.5 && currIndex > 0) {
       setState((prev) => ({ ...prev, currIndex: prev.currIndex - 1 }));
     } else if (state.currTranslate > width / 2.5 && currIndex === 0) {
       setState((prev) => ({ ...prev, currIndex: prev.length - 1 }));
