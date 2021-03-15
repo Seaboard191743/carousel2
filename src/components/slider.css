@@ -14,7 +14,7 @@
   left: 0;
   transform: translateX(0);
   will-change: transform;
-  transition: transform 0.2s ease-out, left 0.2s;
+  transition: transform 0.2s, left 0.2s;
 }
 .slide {
   min-width: 100%;

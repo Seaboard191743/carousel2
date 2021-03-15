@@ -11,7 +11,6 @@ const Slider = ({ children }) => {
     currIndex: 0,
     currTranslate: 0,
     prevTranslate: 0,
-    left: 0,
   });
   const { width, length, active, currIndex, currTranslate } = state;
   const pointers = Array.from({ length }).map((pointer, i) => {
@@ -61,19 +60,18 @@ const Slider = ({ children }) => {
   }
 
   function setTranslateStyle() {
-    setState((prev) => ({ ...prev, left: prev.currTranslate }));
     sliderRef.current.style.left = `${currTranslate}px`;
   }
 
   function nextSlide() {
-    if (currTranslate < -width / 2.5 && currIndex < length - 1) {
+    if (currTranslate < -width / 2 && currIndex < length - 1) {
       setState((prev) => ({ ...prev, currIndex: prev.currIndex + 1 }));
     } else if (currTranslate < -width / 2.5 && currIndex === length - 1) {
       setState((prev) => ({ ...prev, currIndex: 0 }));
     }
   }
   function prevSlide() {
-    if (state.currTranslate > width / 2.5 && currIndex > 0) {
+    if (state.currTranslate > width / 2 && currIndex > 0) {
       setState((prev) => ({ ...prev, currIndex: prev.currIndex - 1 }));
     } else if (state.currTranslate > width / 2.5 && currIndex === 0) {
       setState((prev) => ({ ...prev, currIndex: prev.length - 1 }));
