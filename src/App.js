@@ -1,6 +1,6 @@
 import React from "react";
 import Slide from "./slides/Slide";
-import Slider from "./components/Slider";
+import Slider from "./slider/Slider";
 
 import first from "./assets/img/1.jpg";
 import second from "./assets/img/2.jpg";
